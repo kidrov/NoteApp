@@ -1,0 +1,21 @@
+.custom-info {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  .custom-state {
+    background-color: #28a745;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .custom-id {
+    background-color: #6c757d;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,28 @@
+<div class="container mt-4">
+    <h2>Notes</h2>
+    <div class="form-group">
+      <label for="noteTitle">Title:</label>
+      <input type="text" class="form-control" id="noteTitle" [(ngModel)]="newTitle">
+    </div>
+    <div class="form-group">
+      <label for="noteText">Text:</label>
+      <textarea class="form-control" id="noteText" rows="3" [(ngModel)]="newText"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="noteState">State:</label>
+      <input type="text" class="form-control" id="noteState" [(ngModel)]="newState">
+    </div>
+    <button (click)="addNewNote()" class="btn btn-primary">Add New Note</button>
+    
+    <ul class="list-group mt-4">
+      <li *ngFor="let note of notes" class="list-group-item">
+        <h5 class="mb-1">{{ note.title }}</h5>
+        <p class="mb-1">{{ note.text }}</p>
+        <p class="custom-info">
+          State: <span class="custom-state">{{ note.state }}</span> - ID: <span class="custom-id">{{ note.id }}</span>
+        </p>
+      </li>
+    </ul>
+  
+  </div>
+  
